@@ -1,0 +1,4 @@
+<u><h1>{{data['title'][lang]}}</h1></u>
+<div *ngFor="let el of data['list'][lang]">
+    <br/><experience-element [name]="el['name']" [role]="el['role']" [year]="el['year']" [description]="el['description']"></experience-element>
+</div>

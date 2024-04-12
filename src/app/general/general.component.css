@@ -1,0 +1,16 @@
+#translateGroup{
+    width: 100%;
+    bottom: 20px;
+    left: 20px;
+    position: fixed;
+    margin: auto;
+}
+
+button{
+    color: darkblue;
+    background-color: aliceblue;
+    margin: 10px;
+    border: solid aliceblue 3px;
+    border-radius: 5px;
+    font-size: 20px;
+}

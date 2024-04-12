@@ -1,0 +1,12 @@
+<u><h1>{{data['title'][lang]}}</h1></u><br/>
+<ul>
+    <li *ngFor="let el of data['list'][lang]">{{el}}</li>
+</ul><br/>
+<h2>{{data['subtitle'][lang]}}</h2>
+<form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+    <label for="mail">{{data['mailLabel'][lang]}}</label>
+    <input id="mail" type="text" formControlName="mail"><br/>
+    <label for="message">{{data['messageLabel'][lang]}}</label>
+    <input id="message" type="text" formControlName="message"><br/>
+    <button class="button" type="submit">{{data['submitBtn'][lang]}}</button>
+</form>
